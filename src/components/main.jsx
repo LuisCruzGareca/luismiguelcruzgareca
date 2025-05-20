@@ -2,7 +2,7 @@ import { Portada } from "./Portada";
 import { Proyects } from "./Proyects";
 import { Tools } from "./Tools";
 
-export function Main() {
+export default function Main() {
   return (
     <main id="SobreMi">
       <Portada />

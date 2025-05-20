@@ -9,7 +9,7 @@ import "../css/movile.css";
 import "../css/Tools.css";
 import { Css, Html, Javscript, MongoDB, Reac, Talwind } from "./Icons";
 
-export function Tools() {
+export default function Tools() {
   const totalItems = 6;
   const visibleItems = 3;
 
