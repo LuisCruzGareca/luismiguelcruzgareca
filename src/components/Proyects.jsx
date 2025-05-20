@@ -4,7 +4,7 @@ import paginaMOvile from "../assets/pagina2.jpeg";
 import paginaMovile from "../assets/pagina1-mobile.jpg";
 
 import { useState } from "react";
-import { Back, Next } from "./incons";
+import { Back, Next } from "./Icons";
 import { useSwipeable } from "react-swipeable";
 import "../css/Proyects.css";
 

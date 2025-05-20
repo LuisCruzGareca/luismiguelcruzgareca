@@ -7,7 +7,7 @@
 import React, { useEffect, useState } from "react";
 import "../css/movile.css";
 import "../css/Tools.css";
-import { Css, Html, Javscript, MongoDB, Reac, Talwind } from "./incons";
+import { Css, Html, Javscript, MongoDB, Reac, Talwind } from "./Icons";
 
 export function Tools() {
   const totalItems = 6;

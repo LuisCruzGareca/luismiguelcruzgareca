@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/removebg_p.png";
-import { Menu } from "./incons";
+import { Menu } from "./Icons";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
