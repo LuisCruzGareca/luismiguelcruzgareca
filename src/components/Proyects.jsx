@@ -8,7 +8,7 @@ import { Back, Next } from "./Icons";
 import { useSwipeable } from "react-swipeable";
 import "../css/Proyects.css";
 
-export function Proyects() {
+export default function Proyects() {
   const [startIndex, setStartIndex] = useState(0);
 
   const proyectos = [

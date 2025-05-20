@@ -1,7 +1,7 @@
 import { useState } from "react";
 import luisImage from "../assets/Luis Cruz.png";
 
-export function Portada() {
+export default function Portada() {
   const [mostrarSobreMi, setMostrarSobreMi] = useState(false);
 
   const toggleSobreMi = () => setMostrarSobreMi(!mostrarSobreMi);

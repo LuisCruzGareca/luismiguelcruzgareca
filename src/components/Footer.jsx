@@ -5,7 +5,7 @@ import githubIcon from "../assets/github.png";
 import linkedinIcon from "../assets/linkedin.png";
 import mailIcon from "../assets/correo.png";
 
-export function Footer() {
+export default function Footer() {
   return (
     <>
       <footer className="footer" id="Contacto">

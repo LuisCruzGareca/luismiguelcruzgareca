@@ -5,7 +5,7 @@
 // import Node from "../assets/iconsTools/node.jpg";
 
 import React, { useEffect, useState } from "react";
-import "../css/movile.css";
+import "../css/Movile.css";
 import "../css/Tools.css";
 import { Css, Html, Javscript, MongoDB, Reac, Talwind } from "./Icons";
 

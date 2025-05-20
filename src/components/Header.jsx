@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "../assets/removebg_p.png";
 import { Menu } from "./Icons";
 
-export function Header() {
+export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
