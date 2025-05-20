@@ -1,5 +1,5 @@
 import "../App.css";
-import "../css/movile.css";
+import "../css/Movile.css";
 
 import { Footer } from "./Footer";
 import { Header } from "./header";
