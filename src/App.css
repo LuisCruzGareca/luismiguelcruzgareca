@@ -1,0 +1,192 @@
+html,
+body {
+  margin: 0;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+}
+.root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #050303;
+  background-size: cover;
+  background-position: center;
+  font-family: "Arial", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+.Menu {
+  width: 100%;
+  height: 85px;
+  background-color: #450101;
+}
+
+.logo {
+  display: flex;
+  width: 41%;
+  justify-content: center;
+  align-items: center;
+}
+.logoImg {
+  width: fit-content;
+  float: left;
+  padding: 15px;
+}
+.logo span {
+  font-size: 28px;
+  color: white;
+  font-family: fantasy;
+}
+.menu_list {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  width: fit-content;
+}
+.menu_list1 {
+  float: right;
+  justify-content: flex-end;
+}
+.separar {
+  display: flex;
+  flex-direction: row;
+}
+li {
+  margin: 4px 24px;
+  padding: 0;
+}
+li a {
+  text-decoration: none;
+}
+li p {
+  font-family: math;
+  border: none;
+  font-size: 21px;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  max-width: 1024px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+.imageLuis {
+  display: flex;
+  gap: 50px;
+}
+.imageLuis img {
+  display: flex;
+  width: 100%;
+  border-radius: 50%;
+}
+.parte1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dentro {
+  display: flex;
+  height: 350px;
+  width: 350px;
+}
+p {
+  color: white;
+  font-size: 3vw;
+  font-family: fantasy;
+}
+.btn-At {
+  display: flex;
+  justify-content: center;
+}
+.btn-Ar {
+  width: 50%;
+  color: white;
+  background-color: #8d0d0d;
+  border-radius: 4px;
+  height: 31px;
+  border: none;
+  align-items: center;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.btn-Ar span {
+  color: white;
+  transition: color 0.2s;
+}
+
+.btn-Ar:active span {
+  color: #ff0000;
+}
+.Botones {
+  display: flex;
+  gap: 15px;
+}
+.parte2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txtOculto {
+  width: 80%;
+  transform: translate(14%, 1%);
+}
+.menu {
+  width: 20px;
+}
+.portada {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  max-width: 1024px;
+}
+
+.svgIcon {
+  width: 50px;
+  fill: #ab1f1f;
+  /* margin-top: px; */
+  height: 50px;
+  flex-shrink: 0;
+}
+p,
+span,
+h1,
+h2,
+h3,
+div {
+  caret-color: transparent; /* Quita el cursor de texto */
+  user-select: none; /* Evita que se seleccione el texto */
+}
