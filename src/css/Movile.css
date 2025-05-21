@@ -261,8 +261,8 @@
     font-size: 24px;
   }
   .dentro {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
   }
   .footerMenu {
     margin: 43px;
@@ -270,9 +270,7 @@
   .footerC p {
     font-size: 13px;
   }
-  /* .tools {
-    height: 0;
-  } */
+
   .tools_container {
     height: 390px;
   }
@@ -307,17 +305,19 @@
     width: 40px;
   }
   .Botones a {
-    padding: 10px;
+    padding: 8px;
   }
   .mobile_menu a p {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
-@media screen and (max-width: 376px) {
+/* @media screen and (max-width: 300px) {
   .projectsImg {
-    width: 220px;
+    width: 200px;
   }
   .dentro {
+    width: 220px;
+    height: 220px;
     margin-top: 30px;
   }
   h1 {
@@ -326,4 +326,4 @@
   .mobile_menu a p {
     font-size: 30px;
   }
-}
+} */
