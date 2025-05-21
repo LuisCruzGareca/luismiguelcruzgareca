@@ -8,7 +8,7 @@ export default function Tools() {
   const visibleItems = 3;
 
   const itemWidth = 287 + 26; // 287px width + 2*13px margin
-  const itemHeight = 350 + 26;
+  const itemHeight = 430 + 28;
 
   const [index, setIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 540);
@@ -20,9 +20,9 @@ export default function Tools() {
   }, []);
   useEffect(() => {
     const interval = setInterval(() => {
-      const limit = totalItems - (isMobile ? 3 : visibleItems) + 1;
+      const limit = totalItems - (isMobile ? 1 : visibleItems) + 1;
       setIndex((prev) => (prev + 1) % limit);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [isMobile]);
   return (
