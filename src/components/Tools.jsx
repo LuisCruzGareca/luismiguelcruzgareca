@@ -1,9 +1,3 @@
-// import React from "../assets/iconsTools/react.png";
-// import css from "../assets/iconsTools/css.jpg";
-// import Node from "../assets/iconsTools/node.png";
-// import html from "../assets/iconsTools/html.jpg";
-// import Node from "../assets/iconsTools/node.jpg";
-
 import React, { useEffect, useState } from "react";
 import "../css/Movile.css";
 import "../css/Tools.css";
