@@ -1,6 +1,6 @@
 import pagina2 from "../assets/pagina2.png";
 import pagina1 from "../assets/pages.png";
-import paginaMOvile from "../assets/pagina2.jpeg";
+import paginaMOvile from "../assets/pagina2.png";
 import paginaMovile from "../assets/pagina1-mobile.jpg";
 
 import { useState } from "react";
@@ -13,18 +13,18 @@ export default function Proyects() {
 
   const proyectos = [
     {
-      titulo: "TIENDA",
+      titulo: "TIENDA ONLINE",
       imagenDesktop: pagina2,
       imagenMobile: paginaMOvile,
-      link: "https://www.bata.com.bo/",
+      link: "https://shop.luismiguelcruzgareca.com/",
     },
-    {
-      titulo: "VENTA",
-      imagenDesktop: pagina1,
+    // {
+    //   titulo: "TIENDA ONLINE",
+    //   imagenDesktop: pagina1,
 
-      imagenMobile: paginaMovile,
-      link: "https://www.bata.com.bo/",
-    },
+    //   imagenMobile: paginaMovile,
+    //   link: "https://shop.luismiguelcruzgareca.com/",
+    // },
   ];
 
   const nextProyect = () => {
@@ -53,9 +53,9 @@ export default function Proyects() {
       </div>
 
       <div className="all_projects" {...handlers}>
-        <button className="btnA" onClick={prevProyect}>
+        {/* <button className="btnA" onClick={prevProyect}>
           <Back />
-        </button>
+        </button> */}
 
         <div className="projectsImg">
           <a
@@ -82,9 +82,9 @@ export default function Proyects() {
           </a>
         </div>
 
-        <button className="btnA" onClick={nextProyect}>
+        {/* <button className="btnA" onClick={nextProyect}>
           <Next />
-        </button>
+        </button> */}
       </div>
     </div>
   );

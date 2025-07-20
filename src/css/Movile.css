@@ -155,7 +155,7 @@
     font-size: 25px;
   }
   .projectsImg {
-    width: 642px;
+    width: 750px;
   }
   .imageLuis .parte2 p {
     font-size: 40px;
@@ -206,7 +206,7 @@
     width: 69%;
   }
   .projectsImg {
-    width: 380px;
+    width: 500px;
   }
   .footerMenu {
     flex-direction: column;
@@ -230,7 +230,7 @@
   }
 
   .projectsImg {
-    width: 285px;
+    width: 400px;
   }
   .footer {
     flex-direction: column;
@@ -261,7 +261,7 @@
 /* ===== Celulares Extra Pequeños ===== */
 @media screen and (max-width: 390px) {
   .projectsImg {
-    width: 220px;
+    width: 350px;
   }
   .imageLuis .parte2 p {
     font-size: 19px;
