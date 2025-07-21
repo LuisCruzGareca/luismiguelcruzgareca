@@ -11,9 +11,7 @@ footer {
 footer .container {
   display: flex;
 }
-footer p {
-  margin-bottom: 16px;
-}
+
 footer .social-links {
   display: flex;
   gap: 16px;
@@ -35,6 +33,7 @@ footer .social-links a:hover {
 footer p {
   text-align: left;
   font-size: 20px;
+  margin-bottom: 5px;
 }
 .social_media {
   display: flex;
@@ -48,5 +47,5 @@ footer p {
   gap: 35%;
 }
 .imgLogo {
-  width: 50px;
+  width: 45px;
 }
