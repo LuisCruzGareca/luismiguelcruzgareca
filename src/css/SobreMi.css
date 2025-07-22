@@ -3,32 +3,30 @@
   margin: 0;
   padding: 0;
   background: var(--bg-color);
-  color: var(--text-color);
+  color: #f0f0f0;
   --main-color: #0f172a;
-  --accent-color: #2563eb;
-  --bg-color: #f1f5f9;
+  --accent-color: #0c48cb;
+  --bg-color: #000000;
   --text-color: #1e293b;
 }
 
 .container {
-  max-width: 900px;
+  width: 800px;
   margin: auto;
   padding: 2rem;
-  background: white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  margin-top: 3rem;
+  background: #110e0e;
 }
 
 h1,
 h2,
 h3 {
-  color: var(--accent-color);
+  color: #f0f0f0;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 .about {
@@ -44,7 +42,7 @@ h1 {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid var(--accent-color);
+  border: 4px solid #8d1818;
 }
 
 .about-text {
@@ -54,6 +52,7 @@ h1 {
 .about-text p {
   font-size: 1.05rem;
   line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .titles {
@@ -72,7 +71,6 @@ h1 {
 }
 
 .titles li::before {
-  content: "📘 ";
   margin-right: 5px;
 }
 
@@ -113,7 +111,7 @@ h1 {
 .back {
   display: inline-block;
   margin-top: 2rem;
-  background: var(--accent-color);
+  background: #740d0d;
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
@@ -124,7 +122,7 @@ h1 {
 }
 
 .back:hover {
-  background: #1d4ed8;
+  background: #910808;
 }
 
 .center {
@@ -135,5 +133,63 @@ h1 {
   .about {
     flex-direction: column;
     text-align: center;
+  }
+  .about-text {
+    width: 55%;
+  }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+  .gallery {
+    justify-content: center;
+  }
+  .titles ul {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about img {
+    width: 150px;
+    height: 150px;
+  }
+  .about-text {
+    width: 44%;
+  }
+  .titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titles ul {
+    font-size: 0.9rem;
+    width: 45%;
+  }
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 390px) {
+  .about img {
+    width: 150px;
+    height: 150px;
+  }
+  .about-text {
+    width: 44%;
+  }
+  .titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titles ul {
+    font-size: 0.9rem;
+    width: 45%;
+  }
+  .gallery {
+    flex-direction: column;
+    align-items: center;
   }
 }

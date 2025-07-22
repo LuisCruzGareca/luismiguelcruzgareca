@@ -1,11 +1,7 @@
-import { useState } from "react";
 import luisImage from "../assets/Luis Cruz.png";
+import { Link } from "react-router-dom";
 
 export default function Portada() {
-  const [mostrarSobreMi, setMostrarSobreMi] = useState(false);
-
-  const toggleSobreMi = () => setMostrarSobreMi(!mostrarSobreMi);
-
   return (
     <>
       <div className="imageLuis">
@@ -21,9 +17,9 @@ export default function Portada() {
               No tienes que ser el mejor, solo tienes que ser mejor que ayer.
             </p>
             <div className="Botones">
-              <a onClick={toggleSobreMi} className="btn-Ar">
+              <Link to="/sobreMi" className="btn-Ar">
                 Sobre Mi
-              </a>
+              </Link>
               <a
                 href="/public/LuisCruzGareca.pdf"
                 target="_blank"
@@ -33,23 +29,6 @@ export default function Portada() {
               </a>
             </div>
           </div>
-
-          {mostrarSobreMi && (
-            <div id="cuadroOculto" className="cuadroVisible">
-              <div className="txtOculto">
-                <h2>Sobre mi</h2>
-                <span>
-                  Soy un desarrollador frontend apasionado por el diseño web
-                  moderno y la creación de experiencias digitales intuitivas...
-                </span>
-              </div>
-              <div className="btn-At">
-                <button onClick={toggleSobreMi} className="btn-Ar">
-                  Volver
-                </button>
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </>
