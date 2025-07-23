@@ -23,10 +23,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
 }
 header {
-  position: fixed;
   width: 100%;
   z-index: 9;
 }

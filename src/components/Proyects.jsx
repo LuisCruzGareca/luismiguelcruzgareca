@@ -1,7 +1,5 @@
 import pagina2 from "../assets/pagina2.png";
-import pagina1 from "../assets/pages.png";
 import paginaMOvile from "../assets/tiendaMovile.png";
-import paginaMovile from "../assets/pagina1-mobile.jpg";
 
 import { useState } from "react";
 import { Back, Next } from "./Icons";

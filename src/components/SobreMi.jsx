@@ -1,4 +1,7 @@
 import "../css/SobreMi.css";
+import titulo from "../assets/titulo.jpg";
+import titulo1 from "../assets/provicionNacional.jpg";
+
 import luisImage from "../assets/Luis Cruz.png";
 const volverAtras = () => {
   window.history.back();
@@ -40,8 +43,8 @@ export default function SobreMi() {
           <div className="title-images">
             <h3>Certificados</h3>
             <div className="gallery">
-              <img src="images/certificado1.jpg" alt="Certificado de curso 1" />
-              <img src="images/certificado2.jpg" alt="Certificado de curso 2" />
+              <img src={titulo} alt="Certificado de curso 1" />
+              <img src={titulo1} alt="Certificado de curso 2" />
               {/* Puedes agregar más */}
             </div>
           </div>
