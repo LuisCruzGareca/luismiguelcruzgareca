@@ -1,6 +1,6 @@
 import luisImage from "../assets/Luis Cruz.png";
 import { Link } from "react-router-dom";
-
+import cdPdf from "../assets/LuisCruzGareca.pdf";
 export default function Portada() {
   return (
     <>
@@ -20,11 +20,7 @@ export default function Portada() {
               <Link to="/sobreMi" className="btn-Ar">
                 Sobre Mi
               </Link>
-              <a
-                href="/public/LuisCruzGareca.pdf"
-                target="_blank"
-                className="btn-Ar"
-              >
+              <a href={cdPdf} target="_blank" className="btn-Ar">
                 Ver mi CV
               </a>
             </div>
