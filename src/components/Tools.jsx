@@ -22,7 +22,7 @@ export default function Tools() {
     const interval = setInterval(() => {
       const limit = totalItems - (isMobile ? 1 : visibleItems) + 1;
       setIndex((prev) => (prev + 1) % limit);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [isMobile]);
   return (

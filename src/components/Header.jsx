@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/removebg_p.png";
 import { Menu } from "./Icons";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,9 +25,11 @@ export default function Header() {
         {menuOpen && (
           <ul className={`mobile_menu ${menuOpen ? "show" : ""}`}>
             <li>
-              <a href="#SobreMi" onClick={() => setMenuOpen(false)}>
-                <p>Sobre mi</p>
-              </a>
+              <p>
+                <Link to="/sobreMi" className="btn-Ar">
+                  Sobre Mi
+                </Link>
+              </p>
             </li>
             <li>
               <a href="#Habilidades" onClick={() => setMenuOpen(false)}>
@@ -53,9 +56,14 @@ export default function Header() {
             style={{ listStyle: "none", padding: 0, margin: 0 }}
           >
             <li>
-              <a href="#SobreMi">
-                <p>Sobre mi</p>
-              </a>
+              <p>
+                <Link
+                  to="/sobreMi"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  Sobre Mi
+                </Link>
+              </p>
             </li>
             <li>
               <a href="#Habilidades">
