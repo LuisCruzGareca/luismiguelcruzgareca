@@ -1,7 +1,7 @@
 import "../App.css";
 import "../css/Footer.css";
 
-import githubIcon from "../assets/github.png";
+import githubIcon from "../assets/whatsapp.png";
 import linkedinIcon from "../assets/linkedin.png";
 import mailIcon from "../assets/correo.png";
 
@@ -15,11 +15,7 @@ export default function Footer() {
           </p>
         </div>
         <div className="social_media">
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://wa.me/59172472799" target="_blank">
             <img src={githubIcon} className="imgLogo" alt="GitHub" />
           </a>
           <a

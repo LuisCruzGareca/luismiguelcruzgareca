@@ -1,44 +1,24 @@
-import React, { useEffect, useState } from "react";
-import "../css/Movile.css";
-import "../css/Tools.css";
 import { Css, Html, Javscript, MongoDB, Reac, Talwind } from "./Icons";
-import { Link } from "react-router-dom";
 
-export default function Tools() {
-  const totalItems = 6;
-  const visibleItems = 3;
-
-  const itemWidth = 287 + 26; // 287px width + 2*13px margin
-  const itemHeight = 430 + 28;
-
-  const [index, setIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 540);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 540);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const limit = totalItems - (isMobile ? 1 : visibleItems) + 1;
-      setIndex((prev) => (prev + 1) % limit);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [isMobile]);
+export default function ToolsAll() {
+  const volverAtras = () => {
+    window.history.back();
+  };
   return (
-    <div className="tools" id="Habilidades">
-      <Link to="/tools_all">
+    <div className="root">
+      <div className="contenedor" id="Habilidades">
         <h1>Habilidades</h1>
-        <div className="tools_container">
+
+        <div>
           <div
-            id="carousel"
-            className="carousel-track"
-            style={{
-              transform: isMobile
-                ? `translateY(-${index * itemHeight}px)`
-                : `translateX(-${index * itemWidth}px)`,
-            }}
+            className="contenedorTools"
+            // id="carousel"
+            // className="carousel-track"
+            // style={{
+            //   transform: isMobile
+            //     ? `translateY(-${index * itemHeight}px)`
+            //     : `translateX(-${index * itemWidth}px)`,
+            // }}
           >
             <div className="tools1">
               <Reac />
@@ -116,9 +96,38 @@ export default function Tools() {
                 para crecer con la aplicación.
               </span>
             </div>
+            <div className="tools1">
+              <MongoDB />
+              <h2>MONGODB</h2>
+              <span style={{ color: "white" }}>
+                Uso MongoDB para manejar la información de mis proyectos de
+                forma flexible y organizada. Me gusta trabajar con bases de
+                datos que se adaptan bien a las necesidades del desarrollo
+                moderno. Con MongoDB puedo guardar, consultar y manejar datos
+                sin complicaciones, manteniendo todo simple, escalable y listo
+                para crecer con la aplicación.
+              </span>
+            </div>
+            <div className="tools1">
+              <MongoDB />
+              <h2>MONGODB</h2>
+              <span style={{ color: "white" }}>
+                Uso MongoDB para manejar la información de mis proyectos de
+                forma flexible y organizada. Me gusta trabajar con bases de
+                datos que se adaptan bien a las necesidades del desarrollo
+                moderno. Con MongoDB puedo guardar, consultar y manejar datos
+                sin complicaciones, manteniendo todo simple, escalable y listo
+                para crecer con la aplicación.
+              </span>
+            </div>
+          </div>
+          <div className="center" style={{ marginLeft: "20px" }}>
+            <a className="back" onClick={volverAtras}>
+              Volver al inicio
+            </a>
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 }

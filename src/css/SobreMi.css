@@ -129,7 +129,16 @@ h1 {
 .center {
   text-align: center;
 }
-
+/* //css de toolsAll */
+.contenedor {
+  margin-top: 50px;
+}
+.contenedorTools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: auto;
+}
 @media (max-width: 600px) {
   .about {
     flex-direction: column;
@@ -148,6 +157,9 @@ h1 {
   }
   .titles ul {
     text-align: center;
+  }
+  .contenedorTools {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 480px) {

@@ -32,9 +32,9 @@ export default function Header() {
               </p>
             </li>
             <li>
-              <a href="#Habilidades" onClick={() => setMenuOpen(false)}>
+              <Link to="/tools_all">
                 <p>Habilidades</p>
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#Proyectos" onClick={() => setMenuOpen(false)}>
@@ -66,9 +66,9 @@ export default function Header() {
               </p>
             </li>
             <li>
-              <a href="#Habilidades">
+              <Link to="/tools_all">
                 <p>Habilidades</p>
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#Proyectos">
