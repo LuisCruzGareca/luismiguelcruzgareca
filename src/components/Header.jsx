@@ -25,8 +25,15 @@ export default function Header() {
         {menuOpen && (
           <ul className={`mobile_menu ${menuOpen ? "show" : ""}`}>
             <li>
-              <p>
-                <Link to="/sobreMi" className="btn-Ar">
+              <p style={{ textAlign: "center" }}>
+                <Link
+                  to="/sobreMi"
+                  style={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    fontSize: "31px",
+                  }}
+                >
                   Sobre Mi
                 </Link>
               </p>
