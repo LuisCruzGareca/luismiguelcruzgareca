@@ -87,6 +87,7 @@ main {
   z-index: 1;
   flex: 1;
   max-width: 1024px;
+  margin-top: 16px;
 }
 .menu {
   display: flex;

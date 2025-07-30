@@ -3,9 +3,7 @@
   .menu-mobile {
     display: none;
   }
-  .imageLuis {
-    height: 100vh;
-  }
+
   .tools {
     height: 100vh;
     display: flex;
@@ -23,14 +21,11 @@
     gap: 40px;
   }
   .projects {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .projectsImg {
-    width: 650px;
-  }
+
   h1 {
     margin-top: 70px;
     color: white;
@@ -60,20 +55,34 @@
     width: 350px;
     height: 350px;
   }
+  .tools_container {
+    grid-template-columns: repeat(4, 1fr);
+    width: 950px;
+  }
+  .tools {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .tools1 {
     height: 350px;
     width: 285px;
   }
-  .projectsImg {
-    width: 320px;
-  }
+
   .tools {
     height: 100vh;
+  }
+  .menu-mobile {
+    display: none;
   }
 }
 
 /* ===== Tablet Horizontal / Laptop Pequeño ===== */
 @media screen and (max-width: 1024px) {
+  .projectsImg {
+    width: 70%;
+  }
   .menu-mobile {
     float: right;
     margin: 18px;
@@ -106,10 +115,8 @@
     align-items: center;
   }
   .imageLuis {
-    flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    height: 100vh;
     justify-content: center;
   }
   .Botones {
@@ -120,8 +127,8 @@
     margin-top: 40px;
   }
   .Botones a {
-    width: 100%;
-    padding: 16px 0 25px;
+    width: 78%;
+    padding: 10px 0 13px;
     font-size: 23px;
   }
   .direction {
@@ -139,7 +146,6 @@
     text-align: center;
   }
   .projects {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,9 +160,7 @@
   .layout_projects h3 {
     font-size: 25px;
   }
-  .projectsImg {
-    width: 750px;
-  }
+
   .imageLuis .parte2 p {
     font-size: 40px;
     margin: 4px;
@@ -173,14 +177,12 @@
 /* ===== Tablet Vertical / Celular Grande ===== */
 @media screen and (max-width: 768px) {
   .tools_container {
-    width: 640px;
+    width: 100%;
   }
   .layout_projects h3 {
     font-size: 25px;
   }
-  .projectsImg {
-    width: 642px;
-  }
+
   .imageLuis .parte2 p {
     font-size: 40px;
     margin: 4px;
@@ -192,16 +194,14 @@
   .footer {
     gap: 30px;
   }
-  .contenedorTools {
+
+  .tools_container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 /* ===== Celulares Medianos ===== */
 @media screen and (max-width: 540px) {
-  .tools_container {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .tools1 {
     width: 311px;
   }
@@ -214,12 +214,19 @@
   .footerMenu {
     flex-direction: column;
   }
+  .imageLuis {
+    flex-direction: column;
+  }
+  .carousel-track {
+    flex-direction: column;
+  }
 }
 
 /* ===== Celulares Pequeños ===== */
 @media screen and (max-width: 480px) {
   .tools_container {
     height: 456px;
+    width: 100%;
   }
   .tools1 {
     width: 292px;
@@ -228,18 +235,11 @@
   .carousel-track {
     flex-direction: column;
   }
-  .footer p {
-    font-size: 15px;
-  }
 
   .projectsImg {
     width: 400px;
   }
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
+
   .dentro {
     width: 250px;
     height: 250px;
@@ -259,6 +259,14 @@
   }
   .imageLuis .parte2 p {
     font-size: 30px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .footer p {
+    font-size: 15px;
   }
 }
 /* ===== Celulares Extra Pequeños ===== */
