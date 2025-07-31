@@ -65,6 +65,12 @@ header {
   display: flex;
   flex-direction: row;
 }
+.menu-mobile {
+  display: none;
+}
+.mobile_menu.show {
+  display: block;
+}
 li {
   margin: 4px 24px;
   padding: 0;

@@ -1,11 +1,6 @@
 /* ===== Desktop Extra Large (1250px y más) ===== */
 @media screen and (min-width: 1250px) {
-  .menu-mobile {
-    display: none;
-  }
-
   .tools {
-    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -60,7 +55,6 @@
     width: 950px;
   }
   .tools {
-    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -68,13 +62,6 @@
   .tools1 {
     height: 350px;
     width: 285px;
-  }
-
-  .tools {
-    height: 100vh;
-  }
-  .menu-mobile {
-    display: none;
   }
 }
 
@@ -99,9 +86,7 @@
     text-align: center;
     font-size: 45px;
   }
-  .menu_list {
-    display: none;
-  }
+
   .list_menu li {
     margin-bottom: 38px;
   }
@@ -131,9 +116,7 @@
     padding: 10px 0 13px;
     font-size: 23px;
   }
-  .direction {
-    display: none;
-  }
+
   .tools_container {
     display: grid;
     justify-items: center;
@@ -150,12 +133,15 @@
     flex-direction: column;
     justify-content: center;
   }
+  .projectsImg {
+    width: 100%;
+  }
 }
 
 /* ===== Tablet (hasta 950px) ===== */
 @media screen and (max-width: 950px) {
   .tools_container {
-    width: 640px;
+    width: 622px;
   }
   .layout_projects h3 {
     font-size: 25px;
@@ -172,13 +158,13 @@
   .footer {
     gap: 30px;
   }
+  .projectsImg {
+    width: 100%;
+  }
 }
 
 /* ===== Tablet Vertical / Celular Grande ===== */
 @media screen and (max-width: 768px) {
-  .tools_container {
-    width: 100%;
-  }
   .layout_projects h3 {
     font-size: 25px;
   }
@@ -198,13 +184,34 @@
   .tools_container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .menu_list {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .imageLuis {
+    flex-direction: column;
+  }
 }
 
 /* ===== Celulares Medianos ===== */
 @media screen and (max-width: 540px) {
-  .tools1 {
-    width: 311px;
+  .tools_container {
+    height: 453px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    gap: 11px;
   }
+  .tools1 {
+    width: 330px;
+    height: 430px;
+  }
+
   .toolsTxt {
     width: 69%;
   }
@@ -219,6 +226,7 @@
   }
   .carousel-track {
     flex-direction: column;
+    align-items: center;
   }
 }
 

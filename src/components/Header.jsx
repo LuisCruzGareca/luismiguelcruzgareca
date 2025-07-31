@@ -31,7 +31,7 @@ export default function Header() {
                   style={{
                     textDecoration: "none",
                     color: "inherit",
-                    fontSize: "31px",
+                    fontSize: "46px",
                   }}
                 >
                   Sobre Mi

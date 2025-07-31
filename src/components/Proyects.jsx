@@ -63,7 +63,7 @@ export default function Proyects() {
           >
             <picture>
               <source
-                media="(max-width: 500px)"
+                media="(max-width: 700px)"
                 srcSet={visibleProyect.imagenMobile}
               />
               <source
