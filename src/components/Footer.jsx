@@ -1,35 +1,49 @@
-import "../App.css";
-import "../css/Footer.css";
-
-import githubIcon from "../assets/whatsapp.png";
-import linkedinIcon from "../assets/linkedin.png";
-import mailIcon from "../assets/correo.png";
+import { Link } from "react-router-dom";
+import { GitHub, LinkedIn, LogoLWCG, Mail } from "./Icons";
 
 export default function Footer() {
   return (
-    <>
-      <footer className="footer" id="Contacto">
-        <div className="footerC">
-          <p className="text-center">
-            © 2025 Luis Miguel Cruz Gareca. Todos los derechos reservados.
-          </p>
+    <footer className="main-footer">
+      <div className="footer-container">
+        <div className="footer-brand">
+          <div className="footer-logo">
+            <div className="logo-icon-lwcg">
+              <LogoLWCG />
+            </div>
+          </div>
+          <p className="footer-copyright">CANAL ESTABLE // © 2024</p>
         </div>
-        <div className="social_media">
-          <a href="https://wa.me/59172472799" target="_blank">
-            <img src={githubIcon} className="imgLogo" alt="GitHub" />
+        <div className="footer-links">
+          <a className="nav-link nav-link-gold">
+            <Link to="/">Inicio</Link>
           </a>
+
+          <a className="nav-link nav-link-purple">
+            <Link to="/sobreMi">Sobre Mi</Link>
+          </a>
+        </div>
+        <div className="footer-social">
           <a
-            href="https://www.linkedin.com/in/luis-miguel-cruz-gareca-4a667b350/"
+            href="https://github.com/TU_USUARIO"
             target="_blank"
             rel="noopener noreferrer"
+            className="social-icon"
           >
-            <img src={linkedinIcon} className="imgLogo" alt="LinkedIn" />
+            <GitHub />
           </a>
-          <a href="mailto:tucorreo@example.com">
-            <img src={mailIcon} className="imgLogo" alt="Email" />
+          <a
+            href="https://www.linkedin.com/in/luis-miguel-cruz-gareca-248801331"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <LinkedIn />
+          </a>
+          <a href="mailto:garecal447@gmail.com" className="social-icon">
+            <Mail />
           </a>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 }

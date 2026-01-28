@@ -1,8 +1,8 @@
 import "../css/SobreMi.css";
+import luisImage from "../assets/luiscruz.png";
 import titulo from "../assets/titulo.jpg";
 import titulo1 from "../assets/provicionNacional.jpg";
 
-import luisImage from "../assets/Luis Cruz.png";
 const volverAtras = () => {
   window.history.back();
 };

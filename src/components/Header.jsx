@@ -1,95 +1,110 @@
 import { useState } from "react";
-import logo from "../assets/removebg_p.png";
-import { Menu } from "./Icons";
+import { LogoLWCG, GitHub, LinkedIn, Mail } from "./Icons";
 import { Link } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const [contactOpen, setContactOpen] = useState(false);
 
   return (
-    <header>
-      <div className="Menu">
-        <div className="logoImg">
-          <img src={logo} style={{ width: "150px" }} alt="Logo" />
-        </div>
+    <>
+      <header className="main-header">
+        <div className="header-container">
+          <div className="logo-wrapper">
+            <div className="logo-icon-lwcg">
+              <LogoLWCG />
+            </div>
+          </div>
+          <nav className="main-nav">
+            <a className="nav-link nav-link-gold">
+              <Link to="/">Inicio</Link>
+            </a>
 
-        <div className="menu-mobile" onClick={toggleMenu}>
-          <Menu />
-        </div>
-
-        {/* Menú móvil visible solo si está abierto */}
-        {menuOpen && (
-          <ul className={`mobile_menu ${menuOpen ? "show" : ""}`}>
-            <li>
-              <p style={{ textAlign: "center" }}>
-                <Link
-                  to="/sobreMi"
-                  style={{
-                    textDecoration: "none",
-                    color: "inherit",
-                    fontSize: "46px",
-                  }}
-                >
-                  Sobre Mi
-                </Link>
-              </p>
-            </li>
-            <li>
-              <Link to="/tools_all">
-                <p>Habilidades</p>
-              </Link>
-            </li>
-            <li>
-              <a href="#Proyectos" onClick={() => setMenuOpen(false)}>
-                <p>Proyectos</p>
-              </a>
-            </li>
-            <li>
-              <a href="#Contacto" onClick={() => setMenuOpen(false)}>
-                <p>Contacto</p>
-              </a>
-            </li>
-          </ul>
-        )}
-
-        {/* Menú escritorio (siempre visible) */}
-        <div className="menu_list" id="menu_list">
-          <ul
-            className="separar"
-            style={{ listStyle: "none", padding: 0, margin: 0 }}
+            <a className="nav-link nav-link-purple">
+              <Link to="/sobreMi">Sobre Mi</Link>
+            </a>
+          </nav>
+          <div className="contact-dropdown-wrapper">
+            <button
+              className="header-cta"
+              onClick={() => setContactOpen(!contactOpen)}
+            >
+              Contactar
+            </button>
+            {contactOpen && (
+              <div className="contact-dropdown">
+                <a href="mailto:garecal447@gmail.com" className="contact-icon">
+                  <Mail />
+                </a>
+                <a href="https://www.linkedin.com/in/luis-miguel-cruz-gareca-248801331" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                  <LinkedIn />
+                </a>
+                <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                  <GitHub />
+                </a>
+              </div>
+            )}
+          </div>
+          <button
+            className={`hamburger ${menuOpen ? "hamburger-active" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Menú"
           >
-            <li>
-              <p>
-                <Link
-                  to="/sobreMi"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  Sobre Mi
-                </Link>
-              </p>
-            </li>
-            <li>
-              <Link to="/tools_all">
-                <p>Habilidades</p>
-              </Link>
-            </li>
-            <li>
-              <a href="#Proyectos">
-                <p>Proyectos</p>
-              </a>
-            </li>
-            <li>
-              <a href="#Contacto">
-                <p>Contacto</p>
-              </a>
-            </li>
-          </ul>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+          </button>
         </div>
+      </header>
+      <div
+        className={`mobile-menu-overlay ${menuOpen ? "mobile-menu-open" : ""}`}
+        onClick={() => setMenuOpen(false)}
+      >
+        <nav className="mobile-menu" onClick={(e) => e.stopPropagation()}>
+          <a
+            className="mobile-menu-link"
+            href="#"
+            onClick={() => setMenuOpen(false)}
+          >
+            Inicio
+          </a>
+          <a
+            className="mobile-menu-link"
+            href="#skills"
+            onClick={() => setMenuOpen(false)}
+          >
+            Habilidades
+          </a>
+          <a
+            className="mobile-menu-link"
+            href="#projects"
+            onClick={() => setMenuOpen(false)}
+          >
+            Proyectos
+          </a>
+          <a
+            className="mobile-menu-link"
+            href="#experience"
+            onClick={() => setMenuOpen(false)}
+          >
+            Experiencia
+          </a>
+          <div className="mobile-contact-section">
+            <span className="mobile-contact-label">Contactar</span>
+            <div className="mobile-contact-icons">
+              <a href="mailto:garecal447@gmail.com" className="contact-icon">
+                <Mail />
+              </a>
+              <a href="https://www.linkedin.com/in/luis-miguel-cruz-gareca-248801331" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                <LinkedIn />
+              </a>
+              <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                <GitHub />
+              </a>
+            </div>
+          </div>
+        </nav>
       </div>
-    </header>
+    </>
   );
 }

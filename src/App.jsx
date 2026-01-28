@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./components/Home.jsx";
-import SobreMi from "./components/SobreMi.jsx";
-import ToolsAll from "./components/ToolsAll.jsx";
+import Home from "./pages/home.jsx";
+import SobreMi from "./pages/SobreMi.jsx";
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobreMi" element={<SobreMi />} />
-        <Route path="/tools_all" element={<ToolsAll />} />
       </Routes>
     </BrowserRouter>
   );
