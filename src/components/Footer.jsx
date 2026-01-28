@@ -11,7 +11,7 @@ export default function Footer() {
               <LogoLWCG />
             </div>
           </div>
-          <p className="footer-copyright">CANAL ESTABLE // © 2024</p>
+          <p className="footer-copyright">© 2026</p>
         </div>
         <div className="footer-links">
           <a className="nav-link nav-link-gold">

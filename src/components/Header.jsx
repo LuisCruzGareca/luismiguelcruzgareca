@@ -36,10 +36,20 @@ export default function Header() {
                 <a href="mailto:garecal447@gmail.com" className="contact-icon">
                   <Mail />
                 </a>
-                <a href="https://www.linkedin.com/in/luis-miguel-cruz-gareca-248801331" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                <a
+                  href="https://www.linkedin.com/in/luis-miguel-cruz-gareca-248801331"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-icon"
+                >
                   <LinkedIn />
                 </a>
-                <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                <a
+                  href="https://github.com/TU_USUARIO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-icon"
+                >
                   <GitHub />
                 </a>
               </div>
@@ -61,33 +71,12 @@ export default function Header() {
         onClick={() => setMenuOpen(false)}
       >
         <nav className="mobile-menu" onClick={(e) => e.stopPropagation()}>
-          <a
-            className="mobile-menu-link"
-            href="#"
-            onClick={() => setMenuOpen(false)}
-          >
-            Inicio
+          <a className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
+            <Link to="/">Inicio</Link>
           </a>
-          <a
-            className="mobile-menu-link"
-            href="#skills"
-            onClick={() => setMenuOpen(false)}
-          >
-            Habilidades
-          </a>
-          <a
-            className="mobile-menu-link"
-            href="#projects"
-            onClick={() => setMenuOpen(false)}
-          >
-            Proyectos
-          </a>
-          <a
-            className="mobile-menu-link"
-            href="#experience"
-            onClick={() => setMenuOpen(false)}
-          >
-            Experiencia
+
+          <a className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
+            <Link to="/sobreMi">Sobre Mi</Link>
           </a>
           <div className="mobile-contact-section">
             <span className="mobile-contact-label">Contactar</span>
@@ -95,10 +84,20 @@ export default function Header() {
               <a href="mailto:garecal447@gmail.com" className="contact-icon">
                 <Mail />
               </a>
-              <a href="https://www.linkedin.com/in/luis-miguel-cruz-gareca-248801331" target="_blank" rel="noopener noreferrer" className="contact-icon">
+              <a
+                href="https://www.linkedin.com/in/luis-miguel-cruz-gareca-248801331"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-icon"
+              >
                 <LinkedIn />
               </a>
-              <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" className="contact-icon">
+              <a
+                href="https://github.com/TU_USUARIO"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-icon"
+              >
                 <GitHub />
               </a>
             </div>

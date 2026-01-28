@@ -1330,7 +1330,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .footer-brand {
