@@ -26,8 +26,21 @@ export default function FrontPage() {
           </h1>
 
           <div className="hero-buttons">
-            <button className="btn-primary">Ver Portafolio</button>
-            <button className="btn-secondary">Descargar CV</button>
+            <a
+              href="/luiscv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Ver Portafolio
+            </a>
+            <a
+              href="/luiscv.pdf"
+              download="LuisMiguelCruz_CV.pdf"
+              className="btn-secondary"
+            >
+              Descargar CV
+            </a>
           </div>
         </div>
       </div>
