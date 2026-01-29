@@ -11,6 +11,7 @@ export default function SobreMi() {
     <div className="styleBody">
       <div className="container">
         <h1>Sobre mí</h1>
+        <div class="hero-frame-element" bis_skin_checked="1"></div>
 
         <div className="about">
           <img src={luisImage} alt="Foto de Luis Miguel" />
